@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        select, button {
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Transport Services</h2>
+
+        <div class="form-group">
+            <label for="vehicle">Choose Vehicle:</label>
+            <select id="vehicle">
+                <option value="Vehicle 1">Vehicle 1</option>
+                <option value="Vehicle 2">Vehicle 2</option>
+                <option value="Vehicle 3">Vehicle 3</option>
+                <option value="Vehicle 4">Vehicle 4</option>
+                <option value="Vehicle 5">Vehicle 5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fromCounty">From County:</label>
+            <select id="fromCounty">
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Nyeri">Nyeri</option>
+                <option value="Meru">Meru</option>
+                <option value="Kitui">Kitui</option>
+                <option value="Machakos">Machakos</option>
+                <option value="Kirinyaga">Kirinyaga</option>
+                <option value="Bungoma">Bungoma</option>
+                <option value="Vihiga">Vihiga</option>
+                <option value="Bomet">Bomet</option>
+                <option value="Narok">Narok</option>
+                <option value="Laikipia">Laikipia</option>
+                <option value="Tharaka Nithi">Tharaka Nithi</option>
+                <option value="Trans-Nzoia">Trans-Nzoia</option>
+                <option value="West Pokot">West Pokot</option>
+                <option value="Turkana">Turkana</option>
+                <option value="Samburu">Samburu</option>
+                <option value="Isiolo">Isiolo</option>
+                <option value="Tana River">Tana River</option>
+                <option value="Lamu">Lamu</option>
+                <option value="Kilifi">Kilifi</option>
+                <option value="Taita Taveta">Taita Taveta</option>
+                <option value="Makueni">Makueni</option>
+                <option value="Kajiado">Kajiado</option>
+                <option value="Kwale">Kwale</option>
+                <option value="Garissa">Garissa</option>
+                <option value="Wajir">Wajir</option>
+                <option value="Mandera">Mandera</option>
+                <option value="Marsabit">Marsabit</option>
+                <option value="Kakamega">Kakamega</option>
+                <option value="Homa Bay">Homa Bay</option>
+                <option value="Migori">Migori</option>
+                <option value="Siaya">Siaya</option>
+                <option value="Nandi">Nandi</option>
+                <option value="Kericho">Kericho</option>
+                <option value="Nyamira">Nyamira</option>
+                <option value="Kisii">Kisii</option>
+                <!-- Add other counties here -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="toCounty">To County:</label>
+            <select id="toCounty">
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Nyeri">Nyeri</option>
+                <option value="Meru">Meru</option>
+                <option value="Kitui">Kitui</option>
+                <option value="Machakos">Machakos</option>
+                <option value="Kirinyaga">Kirinyaga</option>
+                <option value="Bungoma">Bungoma</option>
+                <option value="Vihiga">Vihiga</option>
+                <option value="Bomet">Bomet</option>
+                <option value="Narok">Narok</option>
+                <option value="Laikipia">Laikipia</option>
+                <option value="Tharaka Nithi">Tharaka Nithi</option>
+                <option value="Trans-Nzoia">Trans-Nzoia</option>
+                <option value="West Pokot">West Pokot</option>
+                <option value="Turkana">Turkana</option>
+                <option value="Samburu">Samburu</option>
+                <option value="Isiolo">Isiolo</option>
+                <option value="Tana River">Tana River</option>
+                <option value="Lamu">Lamu</option>
+                <option value="Kilifi">Kilifi</option>
+                <option value="Taita Taveta">Taita Taveta</option>
+                <option value="Makueni">Makueni</option>
+                <option value="Kajiado">Kajiado</option>
+                <option value="Kwale">Kwale</option>
+                <option value="Garissa">Garissa</option>
+                <option value="Wajir">Wajir</option>
+                <option value="Mandera">Mandera</option>
+                <option value="Marsabit">Marsabit</option>
+                <option value="Kakamega">Kakamega</option>
+                <option value="Homa Bay">Homa Bay</option>
+                <option value="Migori">Migori</option>
+                <option value="Siaya">Siaya</option>
+                <option value="Nandi">Nandi</option>
+                <option value="Kericho">Kericho</option>
+                <option value="Nyamira">Nyamira</option>
+                <option value="Kisii">Kisii</option>
+                <!-- Add other counties here -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cost">Approximate Cost:</label>
+            <input type="text" id="cost" readonly />
+        </div>
+
+        <button onclick="addToCart()">Add to Cart</button>
+
+        <div class="cart">
+            <h3>Your Cart</h3>
+            <ul id="cartItems"></ul>
+        </div>
+    </div>
+
+    <script>
+        const countyCoordinates = {
+            "Bomet": { lat: -0.9968, lon: 35.0101 },
+            "Bungoma": { lat: -0.5625, lon: 34.5600 },
+            "Busia": { lat: 0.4461, lon: 34.0997 },
+            "Elgeyo Marakwet": { lat: 0.5127, lon: 35.0844 },
+            "Embu": { lat: -0.5103, lon: 37.4547 },
+            "Garissa": { lat: -0.4530, lon: 39.6687 },
+            "Homa Bay": { lat: -0.5344, lon: 34.9306 },
+            "Isiolo": { lat: 0.3520, lon: 37.5882 },
+            "Jomo Kenyatta International Airport (Nairobi)": { lat: -1.319167, lon: 36.927222 },
+            "Kajiado": { lat: -2.0010, lon: 36.7564 },
+            "Kakamega": { lat: 0.2833, lon: 34.7500 },
+            "Kericho": { lat: -0.3667, lon: 35.2833 },
+            "Kiambu": { lat: -1.0371, lon: 36.7480 },
+            "Kilifi": { lat: -3.8281, lon: 39.8400 },
+            "Kirinyaga": { lat: -0.9732, lon: 37.2621 },
+            "Kisii": { lat: -0.6761, lon: 34.7673 },
+            "Kisumu": { lat: -0.0917, lon: 34.7681 },
+            "Kitui": { lat: -1.3583, lon: 38.0172 },
+            "Kwale": { lat: -4.3833, lon: 39.5333 },
+            "Laikipia": { lat: -0.3072, lon: 36.9300 },
+            "Lamu": { lat: -2.2691, lon: 40.9028 },
+            "Machakos": { lat: -1.5167, lon: 37.2667 },
+            "Makueni": { lat: -1.8972, lon: 37.6167 },
+            "Mandera": { lat: 3.9711, lon: 41.8650 },
+            "Marsabit": { lat: 2.3375, lon: 37.9881 },
+            "Meru": { lat: -0.0472, lon: 37.6516 },
+            "Migori": { lat: -1.0300, lon: 34.4667 },
+            "Mombasa": { lat: -4.0435, lon: 39.6682 },
+            "Murang'a": { lat: -0.6790, lon: 37.6535 },
+            "Nairobi": { lat: -1.2867, lon: 36.8172 },
+            "Nakuru": { lat: -0.3031, lon: 36.0664 },
+            "Nandi": { lat: -0.2760, lon: 35.1263 },
+            "Narok": { lat: -1.0742, lon: 35.8963 },
+            "Nyamira": { lat: -0.5528, lon: 34.9447 },
+            "Nyandarua": { lat: -0.9795, lon: 36.6758 },
+            "Nyanza": { lat: -0.1246, lon: 34.6864 },
+            "Samburu": { lat: 1.2785, lon: 37.1951 },
+            "Siaya": { lat: -0.0700, lon: 34.5556 },
+            "Taita Taveta": { lat: -3.3972, lon: 38.2653 },
+            "Tana River": { lat: -2.4875, lon: 38.9472 },
+            "Tharaka Nithi": { lat: -0.4714, lon: 37.7881 },
+            "Trans Nzoia": { lat: 1.0036, lon: 34.9483 },
+            "Turkana": { lat: 3.1404, lon: 35.6001 },
+            "Uasin Gishu": { lat: 0.5151, lon: 35.2807 },
+            "Vihiga": { lat: -0.1072, lon: 34.7011 },
+            "Wajir": { lat: 1.7553, lon: 40.0709 },
+            "West Pokot": { lat: 1.7381, lon: 35.0992 }
+            // Add coordinates for other counties here...
+        };
+
+        const costPerKm = 3; // Cost per kilometer in dollars
+
+        function haversine(lat1, lon1, lat2, lon2) {
+            const R = 6371; // Radius of the Earth in kilometers
+            const dLat = toRadians(lat2 - lat1);
+            const dLon = toRadians(lon2 - lon1);
+            const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) *
+                Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            return R * c; // Distance in kilometers
+        }
+
+        function toRadians(degrees) {
+            return degrees * Math.PI / 180;
+        }
+
+        function calculateCost() {
+            const fromCounty = document.getElementById('fromCounty').value;
+            const toCounty = document.getElementById('toCounty').value;
+
+            const fromLat = countyCoordinates[fromCounty].lat;
+            const fromLon = countyCoordinates[fromCounty].lon;
+            const toLat = countyCoordinates[toCounty].lat;
+            const toLon = countyCoordinates[toCounty].lon;
+
+            const distance = haversine(fromLat, fromLon, toLat, toLon).toFixed(2);
+            const cost = (distance * costPerKm).toFixed(2);
+
+            document.getElementById('cost').value = `$${cost}`;
+        }
+
+        function addToCart() {
+            const vehicle = document.getElementById('vehicle').value;
+            const fromCounty = document.getElementById('fromCounty').value;
+            const toCounty = document.getElementById('toCounty').value;
+            const cost = document.getElementById('cost').value;
+
+            if (!cost || cost === '$NaN') {
+                alert("Please select both from and to counties.");
+                return;
+            }
+
+            const cartItem = document.createElement('li');
+            cartItem.textContent = `Vehicle: ${vehicle} | From: ${fromCounty} | To: ${toCounty} | Cost: ${cost}`;
+            document.getElementById('cartItems').appendChild(cartItem);
+        }
+
+        // Recalculate the cost whenever the from or to county is changed
+        document.getElementById('fromCounty').addEventListener('change', calculateCost);
+        document.getElementById('toCounty').addEventListener('change', calculateCost);
+
+        // Initial cost calculation on page load
+        calculateCost();
+    </script>
+
+</body>
+</html>

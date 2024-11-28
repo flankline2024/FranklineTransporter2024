@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLANKLINE TRANSPORTERS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="LOGO.jpg" alt="Website Logo">
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p><span class="icon">📞</span> Call Us: +254723971206</p>
+                <p><span class="icon">✉️</span> Email: kingij632@gmail.com</p>
+            </div>
+        </div>
+        <div class="title">
+            <p1>FLANKLINE TRANSPORTERS</p1>
+        </div>
+        <div class="pass">
+            <marquee>THE BEST TRANSPORT SERVICES PROVIDER ALL OVER KENYA AND EAST AFRICA</marquee>
+        </div>
+    </header>
+    <nav class="bt">
+        <ul>
+            <li><a href="#home" onclick="loadContent('home')">Home</a></li>
+            <li><a href="#about" onclick="loadContent('about')">About</a></li>
+            <li><a href="#pricing" onclick="loadContent('pricing')">Pricing</a></li>
+            <li><a href="#careers" onclick="loadContent('careers')">Careers</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="car-gallery">
+        <!-- Car 1 -->
+        <div class="car-item" data-name="TRANSPORT 1" data-price="">
+            <img src="Container-Trailer-truck-for-hire.jpg" alt="LONG TRUCK">
+            <h3>LONG TRUCK</h3>
+            <p>For Long distance goods, safe container for transportation.</p>
+            
+            <button class="add-to-cart">Add to Cart</button>          
+        </div>
+
+        <!-- Car 2 -->
+        <div class="car-item" data-name="TRANSPORT 2" data-price="">
+            <img src="55.jpg" alt="Heavy Truck">
+            <h3>HEAVY GOODS</h3>
+            <p>for any construction items eg. long polls etc.. along distance delivery.</p>
+           
+            <button class="add-to-cart">Add to Cart</button>          
+        </div>
+
+        <!-- Car 3 -->
+        <div class="car-item" data-name="TRANSPORT 3" data-price="">
+            <img src="images.jpg" alt="Audi A4">
+            <h3>Common Goods</h3>
+            <p>For Long distance goods, safe container for transportation.</p>
+            
+            <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+        <!-- Car 4 -->
+        <div class="car-item" data-name="TRANSPORT 4" data-price="">
+            <img src="cargo-truck-m.jpg" alt="Ford Mustang">
+            <h3>CONTAINER TRANSPORTATION</h3>
+            <p>container transportation to any part of the country.</p>
+            
+            <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+        <!-- Car 5 -->
+        <div class="car-item" data-name="TRANSPORT 5" data-price="">
+            <img src="ud-truck-2.jpg" alt="Chevrolet Camaro">
+            <h3>SPECIOUS TRANSPORTATION</h3>
+            <p>For any frogile goods, food stuffs etc.</p>
+            
+            <button class="add-to-cart">Add to Cart</button>
+            
+        </div>
+    </section>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        select, button {
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+    </style>
+
+<body>
+
+    <div class="container">
+        <h2>Transport Services</h2>
+
+        <div class="form-group">
+            <label for="vehicle">Choose Vehicle:</label>
+            <select id="vehicle">
+                <option value="Long Truck">LONG TRUCK</option>
+                <option value="Heavy Goods">HEAVY GOODS TRUCK</option>
+                <option value="Common Truck">COMMON GOODS TRUCK</option>
+                <option value="Container Truck">CONTAINER TRUCK</option>
+                <option value="Spacious Truck">SPACIOUS TRUCK</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fromCounty">From County:</label>
+            <select id="fromCounty">
+                <option value="Algeria">Algeria</option>
+    <option value="Angola">Angola</option>
+    <option value="Benin">Benin</option>
+    <option value="Botswana">Botswana</option>
+    <option value="Burkina Faso">Burkina Faso</option>
+    <option value="Burundi">Burundi</option>
+    <option value="Cabo Verde">Cabo Verde</option>
+    <option value="Cameroon">Cameroon</option>
+    <option value="Central African Republic">Central African Republic</option>
+    <option value="Chad">Chad</option>
+    <option value="Comoros">Comoros</option>
+    <option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)</option>
+    <option value="Democratic Republic of the Congo (Congo-Kinshasa)">Democratic Republic of the Congo (Congo-Kinshasa)</option>
+    <option value="Djibouti">Djibouti</option>
+    <option value="Egypt">Egypt</option>
+    <option value="Equatorial Guinea">Equatorial Guinea</option>
+    <option value="Eritrea">Eritrea</option>
+    <option value="Eswatini">Eswatini</option>
+    <option value="Ethiopia">Ethiopia</option>
+    <option value="Gabon">Gabon</option>
+    <option value="Gambia">Gambia</option>
+    <option value="Ghana">Ghana</option>
+    <option value="Guinea">Guinea</option>
+    <option value="Guinea-Bissau">Guinea-Bissau</option>
+    <option value="Ivory Coast">Ivory Coast</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Lesotho">Lesotho</option>
+    <option value="Liberia">Liberia</option>
+    <option value="Libya">Libya</option>
+    <option value="Madagascar">Madagascar</option>
+    <option value="Malawi">Malawi</option>
+    <option value="Mali">Mali</option>
+    <option value="Mauritania">Mauritania</option>
+    <option value="Mauritius">Mauritius</option>
+    <option value="Morocco">Morocco</option>
+    <option value="Mozambique">Mozambique</option>
+    <option value="Namibia">Namibia</option>
+    <option value="Niger">Niger</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="Rwanda">Rwanda</option>
+    <option value="São Tomé and Príncipe">São Tomé and Príncipe</option>
+    <option value="Senegal">Senegal</option>
+    <option value="Seychelles">Seychelles</option>
+    <option value="Sierra Leone">Sierra Leone</option>
+    <option value="Somalia">Somalia</option>
+    <option value="South Africa">South Africa</option>
+    <option value="South Sudan">South Sudan</option>
+    <option value="Sudan">Sudan</option>
+    <option value="Togo">Togo</option>
+    <option value="Tunisia">Tunisia</option>
+    <option value="Tanzania">Tanzania</option>
+    <option value="Uganda">Uganda</option>
+    <option value="Zambia">Zambia</option>
+    <option value="Zimbabwe">Zimbabwe</option>
+                <!-- Add other counties here -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="toCounty">To County:</label>
+            <select id="toCounty">
+                <option value="Algeria">Algeria</option>
+                <option value="Angola">Angola</option>
+                <option value="Benin">Benin</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cabo Verde">Cabo Verde</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)</option>
+                <option value="Democratic Republic of the Congo (Congo-Kinshasa)">Democratic Republic of the Congo (Congo-Kinshasa)</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Eswatini">Eswatini</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                <option value="Ivory Coast">Ivory Coast</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Mali">Mali</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="São Tomé and Príncipe">São Tomé and Príncipe</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Togo">Togo</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+        </div>
+        <form id="infoForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <div class="error" id="firstNameError">First Name is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="middleName">Middle Name</label>
+                <input type="text" id="middleName" name="middleName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <div class="error" id="lastNameError">Last Name is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" pattern="^\d{10}$" required>
+                <div class="error" id="phoneError">Please enter a valid 10-digit phone number.</div>
+            </div>
+        <div class="form-group">
+            <label for="cost">Approximate Cost:</label>
+            <input type="text" id="cost" readonly />
+        </div>
+
+        <button onclick="addToCart()">Add to Cart</button>
+
+      </div>
+        
+    </div>
+    <div class="cart">
+        <h3>Your Cart</h3>
+        <ul id="cartItems">
+      </div>
+      <button onclick="shareWebsiteInfo()">Share Website Info</button>
+<p1>print and save the copy as pdf and share it through our email address or whatsapp number above</p1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+     <script>
+            const countyCoordinates = {
+                "Algeria": { lat: 36.75, lon: 3.06 },
+    "Angola": { lat: -9.19, lon: 13.23 },
+    "Benin": { lat: 6.37, lon: 2.43 },
+    "Botswana": { lat: -24.65, lon: 25.91 },
+    "Burkina Faso": { lat: 12.64, lon: -1.58 },
+    "Burundi": { lat: -3.38, lon: 29.93 },
+    "Cabo Verde": { lat: 15.12, lon: -23.61 },
+    "Cameroon": { lat: 3.85, lon: 11.5 },
+    "Central African Republic": { lat: 4.39, lon: 18.56 },
+    "Chad": { lat: 12.13, lon: 15.03 },
+    "Comoros": { lat: -11.70, lon: 43.25 },
+    "Congo (Congo-Brazzaville)": { lat: -4.27, lon: 15.28 },
+    "Democratic Republic of the Congo (Congo-Kinshasa)": { lat: -4.44, lon: 15.26 },
+    "Djibouti": { lat: 11.82, lon: 42.75 },
+    "Egypt": { lat: 30.02, lon: 31.23 },
+    "Equatorial Guinea": { lat: 3.75, lon: 8.77 },
+    "Eritrea": { lat: 15.33, lon: 38.93 },
+    "Eswatini": { lat: -26.42, lon: 31.13 },
+    "Ethiopia": { lat: 9.03, lon: 38.74 },
+    "Gabon": { lat: 0.42, lon: 9.45 },
+    "Gambia": { lat: 13.45, lon: -16.57 },
+    "Ghana": { lat: 5.56, lon: -0.21 },
+    "Guinea": { lat: 9.51, lon: -13.71 },
+    "Guinea-Bissau": { lat: 11.86, lon: -15.58 },
+    "Ivory Coast": { lat: 5.31, lon: -4.03 },
+    "Kenya": { lat: -1.29, lon: 36.82 },
+    "Lesotho": { lat: -29.61, lon: 28.23 },
+    "Liberia": { lat: 6.31, lon: -9.43 },
+    "Libya": { lat: 32.88, lon: 13.19 },
+    "Madagascar": { lat: -18.88, lon: 47.51 },
+    "Malawi": { lat: -13.98, lon: 33.78 },
+    "Mali": { lat: 12.65, lon: -8.02 },
+    "Mauritania": { lat: 18.08, lon: -15.98 },
+    "Mauritius": { lat: -20.17, lon: 57.50 },
+    "Morocco": { lat: 34.02, lon: -6.84 },
+    "Mozambique": { lat: -25.97, lon: 32.58 },
+    "Namibia": { lat: -22.56, lon: 17.08 },
+    "Niger": { lat: 13.51, lon: 2.11 },
+    "Nigeria": { lat: 9.06, lon: 7.49 },
+    "Rwanda": { lat: -1.94, lon: 30.06 },
+    "São Tomé and Príncipe": { lat: 0.33, lon: 6.73 },
+    "Senegal": { lat: 14.69, lon: -17.44 },
+    "Seychelles": { lat: -4.67, lon: 55.49 },
+    "Sierra Leone": { lat: 8.48, lon: -13.23 },
+    "Somalia": { lat: 2.04, lon: 45.34 },
+    "South Africa": { lat: -25.74, lon: 28.19 },
+    "South Sudan": { lat: 4.85, lon: 31.58 },
+    "Sudan": { lat: 15.50, lon: 32.53 },
+    "Togo": { lat: 6.12, lon: 1.22 },
+    "Tunisia": { lat: 36.80, lon: 10.18 },
+    "Tanzania": { lat: -6.31, lon: 32.58 },
+    "Uganda": { lat: 0.31, lon: 32.58 },
+    "Zambia": { lat: -15.42, lon: 28.29 },
+    "Zimbabwe": { lat: -17.83, lon: 31.05 }
+};
+    
+            const costPerKm = 3; // Cost per kilometer in dollars
+    
+            function haversine(lat1, lon1, lat2, lon2) {
+                const R = 6371; // Radius of the Earth in kilometers
+                const dLat = toRadians(lat2 - lat1);
+                const dLon = toRadians(lon2 - lon1);
+                const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                    Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) *
+                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                return R * c; // Distance in kilometers
+            }
+    
+            function toRadians(degrees) {
+                return degrees * Math.PI / 180;
+            }
+    
+            function calculateCost() {
+                const fromCounty = document.getElementById('fromCounty').value;
+                const toCounty = document.getElementById('toCounty').value;
+    
+                const fromLat = countyCoordinates[fromCounty].lat;
+                const fromLon = countyCoordinates[fromCounty].lon;
+                const toLat = countyCoordinates[toCounty].lat;
+                const toLon = countyCoordinates[toCounty].lon;
+    
+                const distance = haversine(fromLat, fromLon, toLat, toLon).toFixed(2);
+                const cost = (distance * costPerKm).toFixed(2);
+    
+                document.getElementById('cost').value = `$${cost}`;
+            }
+    
+            function addToCart() {
+                const vehicle = document.getElementById('vehicle').value;
+                const fromCounty = document.getElementById('fromCounty').value;
+                const toCounty = document.getElementById('toCounty').value;
+                const cost = document.getElementById('cost').value;
+    
+                if (!cost || cost === '$NaN') {
+                    alert("Please select both from and to counties.");
+                    return;
+                }
+    
+                const cartItem = document.createElement('li');
+                cartItem.textContent = `Vehicle: ${vehicle} | From: ${fromCounty} | To: ${toCounty} | Cost: ${cost}`;
+                document.getElementById('cartItems').appendChild(cartItem);
+            }
+    
+            // Recalculate the cost whenever the from or to county is changed
+            document.getElementById('fromCounty').addEventListener('change', calculateCost);
+            document.getElementById('toCounty').addEventListener('change', calculateCost);
+    
+            // Initial cost calculation on page load
+            calculateCost();
+            const shareMessage = `Check out this transport service!\n\nVehicle: ${vehicle}\nFrom: ${fromCounty}\nTo: ${toCounty}\nCost: ${cost}`;
+    
+            </script>
+            <script src="script.js"></script>
+    
+    </body>
+    </html>
+    
+    
+       </body>
+</html>

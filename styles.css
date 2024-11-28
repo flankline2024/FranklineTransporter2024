@@ -1,0 +1,331 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Header Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header container setup */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Header content container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo styling */
+.logo img {
+    max-height: 50px; /* Adjust depending on your logo size */
+}
+
+/* Contact info styling */
+.contact-info {
+    text-align: right;
+}
+
+/* Contact info paragraph styling */
+.contact-info p {
+    margin: 5px 0;
+    color: aliceblue;
+}
+
+/* Icon styling for contact info */
+.icon {
+    margin-right: 8px;
+}
+.title{
+    align-items: center;
+    color: rgb(241, 228, 228);
+    font-weight: bold;
+    font-size: 50px;
+    padding-left: 180px;
+  }
+.pass{
+    color: white;
+    font-size: medium;
+    
+}
+.bt{
+        background-color: #4f20d1;
+        padding: 10px 20px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 15px;
+        display: block;
+    }
+    
+    nav ul li a:hover {
+        background-color: #575757;
+        border-radius: 4px;
+    }
+    
+    /* Main content styling */
+    main {
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    p {
+        font-size: 16px;
+        color: #555;
+    }
+    main {
+        padding: 20px;
+    }
+    
+    .car-gallery {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    .car-item {
+        position: relative;
+        width: 300px;
+        margin: 15px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .car-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .car-item h3 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    
+    .car-item p {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    
+    button.add-to-cart {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    button.add-to-cart:hover {
+        background-color: #218838;
+    }
+    
+    .cart-summary {
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-top: 20px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cart-summary h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    #total-price {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    button#checkout-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    button#checkout-btn:hover {
+        background-color: #0056b3;
+    }
+    .print-btn {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .print-btn:hover {
+        background-color: #45a049;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+    
+    #map-container {
+        margin-top: 20px;
+    }
+    
+    .contact-actions button {
+        background-color: #25d366;  /* WhatsApp Green */
+    }
+    
+    .contact-actions button:hover {
+        background-color: #128c7e;
+    }
+    .container {
+        width: 80%;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin: 10px 0 5px;
+        font-size: 16px;
+    }
+    
+    select {
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+    
+    #result {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333333;
+    }
+    .form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .form-group input:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+    .form-group input[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .form-group input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .error {
+        color: red;
+        font-size: 14px;
+        display: none;
+    }
